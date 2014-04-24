@@ -1,0 +1,198 @@
+/*******************************************************************************
+ * Copyright (c) 2012 Research and Academic Computer Network.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ * With financial support from the Prevention, Preparedness and Consequence
+ * Management of Terrorism and other Security Related Risks Programme
+ * European Commission - Directorate-General Home Affairs
+ *
+ * Contributors:
+ *     Research and Academic Computer Network
+ ******************************************************************************/
+
+
+.title {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.midTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+.optionTable {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formTable {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highTr {
+    height: 2.3em;
+}
+
+.rightText {
+    text-align: right;
+}
+
+.valueTd {
+    text-align: left;
+    width: 70%;
+}
+
+.centerTd {
+    text-align: center;
+    height: 2em;
+}
+
+.optionTd {
+    text-align: left;
+    height: 2em;
+}
+
+.lower {
+    position: relative;
+    bottom: -0.5em;
+}
+
+.spanRightAbsolute {
+    position: absolute;
+    right: 1em;
+}
+
+.spanLeftAbsolute {
+    position: absolute;
+    left: 1em;
+}
+
+.spanRight {
+    right: 1em;
+}
+
+.spanLeft {
+    left: 1em;
+}
+
+.spanCenter {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.inputLong {
+    width:100%
+}
+
+.dashedLine {
+    border: 1px dashed #C0C0C0;
+    color: #FFFFFF
+
+}
+
+.textAreaInForm {
+    width: 100%;
+    resize: none;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+/*  messages    */
+.messageBoxTable {
+    border:  #a9a9a9 solid thin;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.messageBoxTable th{
+    background-color: #a9a9a9;
+}
+
+.messageBoxTable td {
+    padding: 10px;
+}
+
+.bottomAbsolute {
+    position: absolute;
+    bottom: 1em;
+}
+
+.messageLeft {
+    position: relative;
+    left: 5%;
+}
+
+.messageRightAbsolute {
+    position: absolute;
+    right: 5%;
+}
+
+.messageFormLeft {
+    position: relative;
+    left: 0;
+}
+
+.messageFormRightAbsolute {
+    position: relative;
+    right: 5%;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.short {
+    width: 3em;
+}
+
+.messageFormTable {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.messageWideField {
+    width: 100%
+}
+
+.paddedCell {
+    padding-left: 5px;
+}
+
+.checkboxClass {}
+
+.width60 {
+    width: 60%;
+}
+
+.width15 {
+    width: 15%;
+}
+
+.fileInput {}   /*just foreignObject validation*/
+
+.backgroundGray {
+    background-color: #EEEEFF;
+}
+
+.backgroundWhite {
+    background-color: #FFFFFF;
+}
+
+.boldText{
+    font-weight: bolder;
+}

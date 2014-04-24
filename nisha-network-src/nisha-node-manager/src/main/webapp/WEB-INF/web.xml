@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <!--<error-page>-->
+        <!--<exception-type>java.lang.Throwable</exception-type>-->
+        <!--<location>/errorPage.jsp</location>-->
+    <!--</error-page>-->
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <listener>
+        <listener-class>pl.nask.nisha.manager.model.logic.app.NishaServletContextListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>Authenticator</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.security.AuthenticateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Authenticator</servlet-name>
+        <url-pattern>/Authenticator</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NodeUpdater</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.network.NodeUpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NodeUpdater</servlet-name>
+        <url-pattern>/NodeUpdater</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NodeSearch</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.network.NodeSearchController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NodeSearch</servlet-name>
+        <url-pattern>/NodeSearch</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NodeRemover</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.network.NodeRemoveController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NodeRemover</servlet-name>
+        <url-pattern>/NodeRemover</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LocalConfigUpdaterServlet</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.local.LocalConfigUpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LocalConfigUpdaterServlet</servlet-name>
+        <url-pattern>/LocalConfigUpdaterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AppStarterServlet</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.app.AppStarterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AppStarterServlet</servlet-name>
+        <url-pattern>/AppStarterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LocalOperatorUpdaterServlet</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.local.LocalOperatorUpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LocalOperatorUpdaterServlet</servlet-name>
+        <url-pattern>/LocalOperatorUpdaterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NodeDisplayer</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.network.NodeDisplayController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NodeDisplayer</servlet-name>
+        <url-pattern>/NodeDisplayer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AlertSearchServlet</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.alerts.AlertSearchController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AlertSearchServlet</servlet-name>
+        <url-pattern>/AlertSearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResourceViewer</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.resources.ResourceDisplayController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResourceViewer</servlet-name>
+        <url-pattern>/ResourceViewer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoRedirectorServlet</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.app.LogoRedirectorController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoRedirectorServlet</servlet-name>
+        <url-pattern>/LogoRedirectorServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OperatorContactViewer</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.network.OperatorContactDisplayController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OperatorContactViewer</servlet-name>
+        <url-pattern>/OperatorContactViewer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResourceInvalidator</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.resources.ResourceInvalidateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResourceInvalidator</servlet-name>
+        <url-pattern>/ResourceInvalidator</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NetworkUpdater</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.network.NetworkUpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NetworkUpdater</servlet-name>
+        <url-pattern>/NetworkUpdater</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoggerUpdaterServlet</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.app.LoggerUpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoggerUpdaterServlet</servlet-name>
+        <url-pattern>/LoggerUpdaterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessageSender</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.messages.MessageSendController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageSender</servlet-name>
+        <url-pattern>/MessageSender</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessagePagination</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.messages.MessagePaginationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessagePagination</servlet-name>
+        <url-pattern>/MessagePagination</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessageDisplayer</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.messages.MessageDisplayController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageDisplayer</servlet-name>
+        <url-pattern>/MessageDisplayer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AttachmentDownloader</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.messages.AttachmentDownloadController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AttachmentDownloader</servlet-name>
+        <url-pattern>/AttachmentDownloader</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResourcePagination</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.resources.ResourcePaginationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResourcePagination</servlet-name>
+        <url-pattern>/ResourcePagination</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AlertUpdaterServlet</servlet-name>
+        <servlet-class>pl.nask.nisha.manager.controllers.alerts.AlertUpdaterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AlertUpdaterServlet</servlet-name>
+        <url-pattern>/AlertUpdaterServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
